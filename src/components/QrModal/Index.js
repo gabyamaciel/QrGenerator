@@ -1,12 +1,11 @@
-import styles from "./Image.module.css";
-import Loader from "../../components/Loader/Index";
-import { useState } from "react";
+import styles from "./QrModal.module.css";
+import Loader from "../Loader/Index";
 
 const Image = ({ src, alt, closeModal, isLoading }) => {
   return (
     <div className={styles.qrContainer}>
-      <div className="modal-overlay">
-        <div className="modal">
+      <div className={styles.modalOverlay}>
+        <div className={styles.modal}>
           {isLoading ? (
             <Loader />
           ) : (

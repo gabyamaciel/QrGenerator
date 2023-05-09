@@ -4,8 +4,7 @@ import Input from "../../components/Input/Index";
 import FormURL from "../../components/FormURL/Index";
 import FormVCard from "../../components/FormVCard/Index";
 import FormWiFi from "../../components/FormWiFi/Index";
-import Loader from "../../components/Loader/Index";
-import Image from "../../components/Image/Index";
+import Image from "../../components/QrModal/Index";
 import { fetchQRBlob } from "../../services/GenerateQRService";
 
 import styles from "./CreateQr.module.css";
