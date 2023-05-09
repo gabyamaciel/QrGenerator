@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 16px 32px 32px 32px;
+  align-items: center;
+}
+
+.error_message {
+  color: red;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.addButton {
+  width: 50%;
+  background-color: white;
+  color: #4caf50;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-color: #4caf50;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.dynamicInputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}

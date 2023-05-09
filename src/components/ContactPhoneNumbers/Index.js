@@ -1,0 +1,75 @@
+const phoneTypes = {
+  home: "HOME",
+  work: "WORK"
+};
+
+const ContactPhoneNumbers = ({
+  label,
+  phoneNumbers,
+  type,
+  name,
+  handlePhoneChange,
+  handlePhoneTypeChange,
+  deleteField,
+  addField
+}) => {
+  return (
+    <>
+      <label>{label}</label>
+      {phoneNumbers &&
+        phoneNumbers.map((phone, index) => {
+          return (
+            <div key={`phone${index}`}>
+              <div className="dynamicInputContainer">
+                <input
+                  type={type}
+                  name={name}
+                  value={phone.phoneNumber}
+                  onChange={(e) => handlePhoneChange(e, index)}
+                />
+                {index > 0 && (
+                  <button
+                    name={name}
+                    type="button"
+                    onClick={(e) => deleteField(e, index)}
+                  >
+                    Delete
+                  </button>
+                )}
+              </div>
+              <label>
+                <input
+                  name={`phoneType${index}`}
+                  value={phoneTypes.home}
+                  type="radio"
+                  checked={phone.type === phoneTypes.home}
+                  onChange={(e) => handlePhoneTypeChange(e, index)}
+                />
+                {phoneTypes.home}
+              </label>
+              <label>
+                <input
+                  name={`phoneType${index}`}
+                  value={phoneTypes.work}
+                  type="radio"
+                  checked={phone.type === phoneTypes.work}
+                  onChange={(e) => handlePhoneTypeChange(e, index)}
+                />
+                {phoneTypes.work}
+              </label>
+            </div>
+          );
+        })}
+      <button
+        className="addButton"
+        name={name}
+        type="button"
+        onClick={addField}
+      >
+        New phone +
+      </button>
+    </>
+  );
+};
+
+export default ContactPhoneNumbers;
