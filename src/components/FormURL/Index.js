@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Input from "../Input/Index";
-import { validate } from "../../utils/inputValidation";
+import { validateUrl } from "../../utils/inputValidation";
 import ErrorMessage from "../ErrorMessage/Index";
 
 import styles from "./FormURL.module.css";
@@ -17,7 +17,7 @@ export default function FormURL({ handleOnSubmit }) {
   };
 
   const onSubmit = () => {
-    const validation = validate(url);
+    const validation = validateUrl(url);
     setIsValid(validation);
 
     if (validation) {

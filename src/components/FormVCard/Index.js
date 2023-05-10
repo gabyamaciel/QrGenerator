@@ -3,9 +3,8 @@ import { useState } from "react";
 import ContactEmails from "../ContactEmails/Index";
 import ContactPhoneNumbers from "../ContactPhoneNumbers/Index";
 import Input from "../Input/Index";
-import { validate } from "../../utils/inputValidation";
+import { validate, validateEmail, validatePhoneNumber } from "../../utils/inputValidation";
 import ErrorMessage from "../ErrorMessage/Index";
-import styles from "./FormVCard.module.css";
 
 const FormVCard = ({ handleOnSubmit }) => {
   const [contactData, setContactData] = useState({
@@ -74,12 +73,12 @@ const FormVCard = ({ handleOnSubmit }) => {
       N:${name.lastName};${name.firstName}`;
 
     contactData.emails.forEach((email) => {
-      validation = validation && validate(email);
+      validation = validation && validateEmail(email);
       vCard += `\nEMAIL:${email}`;
     });
 
     contactData.phoneNumbers.forEach((phone) => {
-      validation = validation && validate(phone);
+      validation = validation && validatePhoneNumber(phone.phoneNumber);
       vCard += `\nTEL;${phone.type}:${phone.phoneNumber}`;
     });
 

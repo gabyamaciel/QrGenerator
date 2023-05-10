@@ -28,7 +28,7 @@ describe('FormURL', () => {
     const submitButton = screen.getByText('Create');
 
     // Enter an invalid URL
-    fireEvent.change(inputElement, { target: { value: '' } });
+    fireEvent.change(inputElement, { target: { value: 'Invalid URL' } });
 
     // Click the submit button
     fireEvent.click(submitButton);

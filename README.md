@@ -1,3 +1,19 @@
+## Introduction
+This project is a challenge project that I created using ReactJS. While the visuals may not be at their best, I am confident in my ability to collaborate effectively with design experts to create visually appealing interfaces. My main focus is to showcase my expertise and passion in developing useful applications with frontend technologies like ReactJS, which I have thoroughly enjoyed working with. Moreover, just as I have been able to adapt and make the best out of the advantages of ReactJS, I am also eager to explore and leverage the benefits of diverse frontend frameworks. I am determined to continue growing and improving my skills in developing and designing user interfaces with great UX.
+
+## My Passion for Frontend Development
+I am extremely passionate about frontend development, especially working with technologies like ReactJS. Here are a few reasons why:
+
+1. **Collaborative mindset**: I enjoy collaborating with design experts and leveraging their expertise to create visually appealing interfaces that enhance the overall user experience.
+
+2. **User-centric approach**: Developing useful applications with frontend technologies allows me to prioritize the needs and expectations of the end users, ensuring a seamless and enjoyable experience.
+
+3. **Constant learning**: The frontend development landscape is ever-evolving, with new frameworks and tools emerging regularly. I am eager to learn and adapt to these advancements, continually expanding my knowledge and skills.
+
+4. **Design and aesthetics**: Creating visually appealing and intuitive user interfaces is a rewarding aspect of frontend development for me. I strive to strike the perfect balance between aesthetics and functionality.
+
+These reasons, combined with my dedication and enthusiasm for frontend development, drive my passion to create outstanding user experiences. I am committed to continuous growth, always striving to deliver high-quality applications with great UX.
+
 # QrGenerator
 
 ## Description
@@ -21,6 +37,7 @@ The QR Generator is a web application built using the ReactJS library. It provid
 - Babel Runtime: 7.13.8
 - TypeScript: 4.1.3
 - Jest: ^27.5.1
+- Jest Fetch Mock: ^3.0.3
 - Testing Library/Jest DOM: "^5.16.5"
 - Testing Library/React: "^14.0.0"
 

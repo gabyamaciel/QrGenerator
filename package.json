@@ -1,21 +1,23 @@
 {
-  "name": "react",
+  "name": "qrgenerator",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "React QR Generator",
   "keywords": [
     "react",
-    "starter"
+    "square"
   ],
   "main": "src/index.js",
   "dependencies": {
-    "csbbust": "1.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scripts": "5.0.1",
-    "react-spinners": "0.13.8"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
     "typescript": "4.1.3"
   },
   "scripts": {
