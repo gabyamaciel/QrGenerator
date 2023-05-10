@@ -3,6 +3,7 @@ import { useState } from "react";
 import ContactEmails from "../ContactEmails/Index";
 import ContactPhoneNumbers from "../ContactPhoneNumbers/Index";
 import Input from "../Input/Index";
+import styles from "./FormVCard.module.css";
 import { validate, validateEmail, validatePhoneNumber } from "../../utils/inputValidation";
 import ErrorMessage from "../ErrorMessage/Index";
 

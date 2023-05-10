@@ -47,6 +47,7 @@ input[type="submit"]:hover {
   border-color: #4caf50;
   border-radius: 4px;
   cursor: pointer;
+  float: right;
 }
 
 .addButton:hover {
@@ -66,4 +67,23 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+input[type="radio"] {
+  margin: 0px 5px 0px 15px;
+}
+
+.deleteButton {
+  background-color: white;
+  color: red;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-color: red;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: white;
 }

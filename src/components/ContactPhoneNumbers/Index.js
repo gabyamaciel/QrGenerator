@@ -14,7 +14,7 @@ const ContactPhoneNumbers = ({
   addField
 }) => {
   return (
-    <>
+    <div>
       <label htmlFor={name}>{label}</label>
       {phoneNumbers &&
         phoneNumbers.map((phone, index) => {
@@ -30,6 +30,7 @@ const ContactPhoneNumbers = ({
                 />
                 {index > 0 && (
                   <button
+                    className="deleteButton"
                     name={name}
                     type="button"
                     onClick={(e) => deleteField(e, index)}
@@ -69,7 +70,7 @@ const ContactPhoneNumbers = ({
       >
         Add phone +
       </button>
-    </>
+    </div>
   );
 };
 

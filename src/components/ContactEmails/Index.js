@@ -8,7 +8,7 @@ const ContactEmails = ({
   label
 }) => {
   return (
-    <>
+    <div>
       <label htmlFor={name}>{label}</label>
       {emails &&
         emails.map((email, index) => {
@@ -23,6 +23,7 @@ const ContactEmails = ({
               />
               {index > 0 && (
                 <button
+                  className="deleteButton"
                   name={name}
                   type="button"
                   onClick={(e) => deleteField(e, index)}
@@ -41,7 +42,7 @@ const ContactEmails = ({
       >
         Add email +
       </button>
-    </>
+    </div>
   );
 };
 
