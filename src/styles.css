@@ -87,3 +87,19 @@ input[type="radio"] {
   background-color: red;
   color: white;
 }
+
+button {
+  background-color: white;
+  color: #1a8cff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-color: #1a8cff;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: #1a8cff;
+  color: white;
+}
