@@ -6,14 +6,13 @@ import FormVCard from "../../components/FormVCard/Index";
 import FormWiFi from "../../components/FormWiFi/Index";
 import Image from "../../components/QrModal/Index";
 import { fetchQRBlob } from "../../services/GetQr/GetQrService";
-import Button from 'react-bootstrap/Button';
 
 import styles from "./CreateQr.module.css";
 
 const FormTypes = {
-  url: "url",
-  wifi: "wifi",
-  vcard: "vcard"
+  url: "URL",
+  wifi: "WIFI",
+  vcard: "VCARD"
 };
 
 const getFormType = (type, onSubmit) => {
@@ -94,6 +93,7 @@ const CreateQr = () => {
           <Image
             src={qr}
             alt="QR"
+            qrType={selectedOption}
             closeModal={handleCloseModal}
             isLoading={isLoading}
           />

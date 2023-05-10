@@ -59,4 +59,4 @@ The following environment variables are required to configure the application:
 
 - **npm start**: Starts the development server.
 - **npm build**: Builds the production-ready version of the app.
-
+- **npm test**: Runs the test suite.

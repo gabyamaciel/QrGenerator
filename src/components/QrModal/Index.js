@@ -1,7 +1,7 @@
 import styles from "./QrModal.module.css";
 import Loader from "../Loader/Index";
 
-const Image = ({ src, alt, closeModal, isLoading }) => {
+const Image = ({ src, alt, closeModal, isLoading, qrType }) => {
   return (
     <div className={styles.qrContainer}>
       <div className={styles.modalOverlay}>
@@ -10,7 +10,7 @@ const Image = ({ src, alt, closeModal, isLoading }) => {
             <Loader />
           ) : (
             <>
-              <h2>Your QR</h2>
+              <h2>Your {qrType} QR</h2>
               <img
                 src={URL.createObjectURL(src)}
                 alt={alt}
