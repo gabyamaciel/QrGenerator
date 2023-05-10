@@ -20,6 +20,9 @@ The QR Generator is a web application built using the ReactJS library. It provid
 
 - Babel Runtime: 7.13.8
 - TypeScript: 4.1.3
+- Jest: ^27.5.1
+- Testing Library/Jest DOM: "^5.16.5"
+- Testing Library/React: "^14.0.0"
 
 ## Environment Variables
 

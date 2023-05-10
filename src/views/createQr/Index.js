@@ -5,7 +5,8 @@ import FormURL from "../../components/FormURL/Index";
 import FormVCard from "../../components/FormVCard/Index";
 import FormWiFi from "../../components/FormWiFi/Index";
 import Image from "../../components/QrModal/Index";
-import { fetchQRBlob } from "../../services/GenerateQRService";
+import { fetchQRBlob } from "../../services/GetQr/GetQrService";
+import Button from 'react-bootstrap/Button';
 
 import styles from "./CreateQr.module.css";
 

@@ -9,12 +9,13 @@ const ContactEmails = ({
 }) => {
   return (
     <>
-      <label>{label}</label>
+      <label htmlFor={name}>{label}</label>
       {emails &&
         emails.map((email, index) => {
           return (
             <div className="dynamicInputContainer" key={`email${index}`}>
               <input
+                id={name}
                 type={type}
                 name={name}
                 value={email}
@@ -38,7 +39,7 @@ const ContactEmails = ({
         type="button"
         onClick={addField}
       >
-        New email +
+        Add email +
       </button>
     </>
   );

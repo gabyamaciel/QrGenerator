@@ -15,13 +15,14 @@ const ContactPhoneNumbers = ({
 }) => {
   return (
     <>
-      <label>{label}</label>
+      <label htmlFor={name}>{label}</label>
       {phoneNumbers &&
         phoneNumbers.map((phone, index) => {
           return (
             <div key={`phone${index}`}>
               <div className="dynamicInputContainer">
                 <input
+                  id={name}
                   type={type}
                   name={name}
                   value={phone.phoneNumber}
@@ -66,7 +67,7 @@ const ContactPhoneNumbers = ({
         type="button"
         onClick={addField}
       >
-        New phone +
+        Add phone +
       </button>
     </>
   );

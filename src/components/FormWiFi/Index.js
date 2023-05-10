@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import Input from "../Input/Index";
-import styles from "./FormWiFi.module.css";
 import { validate } from "../../utils/inputValidation";
 import ErrorMessage from "../ErrorMessage/Index";
 

@@ -9,7 +9,6 @@ export async function fetchQRBlob(content) {
     const blob = await response.blob();
     return blob;
   } catch (error) {
-    console.log(error);
     return null;
   }
 }
